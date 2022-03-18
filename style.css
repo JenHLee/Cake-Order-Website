@@ -1,0 +1,140 @@
+#logo {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo_img {
+  width: 400px;
+}
+
+#company-info {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Unsplash [Online].Available : https://unsplash.com/photos/vuDbI4yAIp0*/
+body {
+  background-image: url(./img/bg2.jpg);
+  background-size: cover;
+  font-family: 'Roboto Slab', serif;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+h1 {
+  margin-left: 5rem;
+  padding-top: 2rem;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  margin-bottom: -3rem;
+}
+
+form {
+  width: 20vw;
+  min-width: 20rem;
+  padding: 1rem;
+  border: solid 0.5px #D15D7D;
+  border-radius: 50px;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  padding: 4rem;
+}
+
+#menu-img {
+  width: 500px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+input, #Roundcake, select{
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#Roundcake{
+  margin-left: 15px;
+}
+
+#cakeSizeSelecting{
+  display: flex;
+  margin: auto;
+  padding: auto;
+}
+
+#orderCake {
+  width: 200px;
+  
+  padding: 0.5rem;
+}
+
+.form input {
+  width: 10vw;
+  text-decoration: none;
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+#contact, #order-list {
+  padding: 5rem 1rem;
+
+}
+
+h2 {
+  margin: 20px 0;
+  border-bottom: 1px solid rgb(92, 92, 92);
+}
+
+#flex-menu {
+  margin-top: 100px;
+}
+
+#add-additionalChocie p {
+  font-size: 12px;
+  color: gray;
+}
+
+#orderInfo {
+  width: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#order-list{
+  color: white;
+}

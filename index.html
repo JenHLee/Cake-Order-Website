@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New City Bakeries</title>
+  <link rel='stylesheet' href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/505568b884.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Unsplash [Online].Available : https://unsplash.com/photos/L7u4HArnaEw -->
+    <div id="logo"><img src="./img/logo.png" alt="logo" id="logo_img"></div>
+    <div id="company-info">
+      16 Ave, NW Calgary AB, T2M 0L4 | newcitybakeries@bakeries.ca | +1.877.284.7248
+  </div>
+  </header>
+  <div id="menu">
+    <div id="menu-image-container">
+      <img id="menu-img" src="./img/cake1.png" alt="menu-img" />
+    </div>
+    <div id="order-select">
+      <div id="select-container">
+        <form action="none" onsubmit="myformSubmit(event)" id="form" name="form">
+          
+          <h2>Order Info</h2>
+          <label id="cake">Cake</label>
+          <select name="selectedCakeType" onchange="showSizeSelectionOfCake(this.value)" required>
+            <option value="">-- Select Option --</option>
+            <option value="Sheet cake">Sheet Cake</option>
+            <option value="Round cake">Round Cake</option>
+          </select>
+          <div id="cakeSizeSelecting">
+          </div>
+          <label id="layerName">Layer</label>
+          <input type="number" name="layer" id="layer" value="1" min="1" max="3"
+                 oninput="updateData(this.id, this.value)" />
+          <br />
+          <label id="additional">Additional Choice</label>
+          <select id="additionalchocie-select" onchange="updateAdditionalChoice(this.value)">
+            <option value="">--Please choose an option--</option>
+            <option value="Cream Cheese icing">Cream Cheese icing is an extra $5</option>
+            <option value="Fruit and Almonds Topping">Fruit and Almonds topping is an extra $7</option>
+            <option value="Fruit Jam">Fruit jam filling between layers is an extra $4</option>
+          </select>
+          <div id="add-additionalChocie"></div>
+          <div class="form">
+            <h2>Customer Info</h2>
+            <label>First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="firstName" value="" pattern="[a-zA-Z]{1,15}"
+                   autofocus required />
+            <hr>
+            <label>Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="lastName" value="" pattern="[a-zA-Z]{1,15}"
+                   required />
+            <hr>
+            <label>Address</label>
+            <input type="text" id="address" name="address" placeholder="Address" value="" required />
+            <hr>
+            <label>Postal Code</label>
+            <input type="text" id="postalCode" name="postalCode" placeholder="Postal Code"
+                   pattern="[a-zA-Z][0-9][a-zA-Z] [0-9][a-zA-Z][0-9]" value="" required />
+            <hr>
+            <label>Phone number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="000-000-0000" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            <hr>
+            <label>E-mail</label>
+            <input type="text" id="mail" name="mail" placeholder="e-mail" value="" required />
+            <hr>
+            <input type="submit" value="Order" id="orderInfo">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="order-list" hidden>
+    <h2 class="cart-name">Your Info</h2>
+    <div id="order-info"></div>
+    <h2 class="cart-name">Your Order</h2>
+    <div id="add-cart"></div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+
+</html>
