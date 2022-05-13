@@ -18,7 +18,7 @@
 - CSS
 - JavaScript
 
-## :computer: Demo Image
-
+## :computer: Demo
+https://jenhlee.github.io/Cake-Order-Website/
 ![sc](https://user-images.githubusercontent.com/97131199/159050098-5becf23d-0f5b-4aa9-b3cf-ab6ecd1d38f1.png)
 
